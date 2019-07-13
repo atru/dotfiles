@@ -1,0 +1,6 @@
+.config/mc
+.config/zsh
+.config/oh-my-zsh
+.local/share/icons/flags
+.local/share/mc/skins
+.zshrc
