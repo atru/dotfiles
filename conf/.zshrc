@@ -7,7 +7,42 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="bullet-train" # https://github.com/atru/bullet-train.zsh
+
+BULLETTRAIN_PROMPT_ORDER=(
+  time
+  context
+  dir
+  git
+  status
+  cmd_exec_time
+)
+
+BULLETTRAIN_PROMPT_CHAR=""
+BULLETTRAIN_PROMPT_ADD_NEWLINE=false
+BULLETTRAIN_PROMPT_SEPARATE_LINE=false
+BULLETTRAIN_STATUS_EXIT_SHOW=true
+
+BULLETTRAIN_TIME_BG=black
+BULLETTRAIN_TIME_FG=default
+BULLETTRAIN_EXEC_TIME_BG=blue
+BULLETTRAIN_EXEC_TIME_FG=black
+BULLETTRAIN_STATUS_FG=black
+BULLETTRAIN_DIR_FG=black
+
+BULLETTRAIN_GIT_COLORIZE_DIRTY=true
+BULLETTRAIN_GIT_BG=green
+BULLETTRAIN_GIT_MODIFIED="  " #icons require font PragmataPro Regular
+BULLETTRAIN_GIT_DELETED="  "
+BULLETTRAIN_GIT_ADDED="  "
+BULLETTRAIN_GIT_UNTRACKED="  "
+BULLETTRAIN_GIT_CLEAN="" #hide check mark, because green background says it all
+BULLETTRAIN_GIT_DIRTY="" #hide error mark, because yellow bg + status icons
+
+SEGMENT_SEPARATOR=""  #classic powerline
+SEGMENT_SEPARATOR=" " #scrape
+SEGMENT_SEPARATOR=" " #fire
+SEGMENT_SEPARATOR=" " #digital decay, best imho
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
