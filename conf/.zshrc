@@ -39,9 +39,9 @@ BULLETTRAIN_GIT_UNTRACKED="  "
 BULLETTRAIN_GIT_CLEAN="" #hide check mark, because green background says it all
 BULLETTRAIN_GIT_DIRTY="" #hide error mark, because yellow bg + status icons
 
-SEGMENT_SEPARATOR=""  #classic powerline
-SEGMENT_SEPARATOR=" " #scrape
-SEGMENT_SEPARATOR=" " #fire
+#SEGMENT_SEPARATOR=""  #classic powerline
+#SEGMENT_SEPARATOR=" " #scrape
+#SEGMENT_SEPARATOR=" " #fire
 SEGMENT_SEPARATOR=" " #digital decay, best imho
 
 # Uncomment the following line to use case-sensitive completion.
@@ -156,3 +156,6 @@ export CUSTOM_CONFIGS_DIR=$HOME/.config/zsh
 if [ -f "$CUSTOM_CONFIGS_DIR/custom-aliases.zsh" ] ; then
   . $CUSTOM_CONFIGS_DIR/custom-aliases.zsh
 fi
+
+# Created by `pipx` on 2021-05-06 15:08:01
+export PATH="$PATH:/home/doozer/.local/bin"
